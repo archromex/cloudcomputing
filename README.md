@@ -8,9 +8,9 @@ SET-UP INSTRUCTIONS:
 2. IAM Role for Lambda Function
      - Create IAM Role and attach policies that grants access to S3. In this case since we
        are working with Amazon S3 and Elastic Transcoder, attach the 'AmazonS3ReadOnlyAccess' and
-       'AmazonElasticTranscoderJobsSubmitter' policies.
+       'AmazonElasticTranscoderJobsSubmitter' policies. 
 3. AWS Lambda Function
-     - Create Lambda function and choose the IAM Role created in the previous step.
+     - Create Lambda function and choose the IAM Role created in the previous step. (see Lambda-Transcoder file)
      - Add trigger and choose the source bucket in the S3, and event type to 'PUT'. This will
        trigger the function every time a file is uploaded in the S3 bucket.
 4. Amazon Elastic Transcoder
